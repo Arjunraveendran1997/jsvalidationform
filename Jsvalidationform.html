@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Java script Validation form</title>
+
+    <link rel="stylesheet" href="style.css">
+    <script src="javascript.js"></script>
+</head>
+<body>
+  <div class="form-heading">
+    <h1>Javascript Form Validation</h1>
+  </div>
+ 
+
+  <div class="form-container">
+    <form style="margin-top: 20px;" class="form-contain" onsubmit="return verifyPassword()" method="POST">
+        <div class="col-md-6">
+          <label style="margin-left: 5px; " for="inputname" class="form-label">Name<span style="color:red">*</span></label>
+          <input style="margin-left: 192px;" type="text" class="form-control" id="inputname" required>
+        </div>
+       
+        <div style="margin-top: 5px;" class="col-12">
+          <label style="margin-left: 5px;" for="inputAddress" class="form-label">Address<span style="color:red">*</span></label>
+          <input style="margin-left: 174px;" type="text" class="form-control" id="inputAddress" required>
+        </div>
+        <div style="margin-top: 5px;" class="col-md-6">
+            <label style="margin-left: 5px;" for="inputzipcode4" class="form-label">Zip Code<span style="color:red">*</span></label>
+            <input style="margin-left: 165px;" type="number" class="form-control" id="inputzipcode4" required>
+          </div>
+       
+        <div style="margin-top: 5px;" class="col-md-4">
+          <label style="margin-left: 5px;" for="inputCountry" class="form-label" >Country<span style="color:red">*</span></label>
+          <select style="margin-left: 173px;" id="inputCountry" class="form-select" required >
+            <option selected required>Please Select...</option>
+            <option>Afghanistan</option>
+            <option>Algeria</option>
+            <option>Argentina</option>
+            <option>Australia</option>
+            <option>Bahrain</option>
+            <option>Bangladesh</option>
+            <option>Barbados</option>
+            <option>Belgium</option>
+            <option>Bhutan</option>
+            <option>Canada</option>
+            <option>Cuba</option>
+            <option>France</option>
+            <option>Germany</option>
+            <option>India</option>
+            <option>Indonesia</option>
+            <option>Italy</option>
+            <option>Kenya	</option>
+            <option>Nigeria</option>
+            <option>Sri Lanka</option>
+            <option>Zimbabwe</option>
+          </select>
+        </div>
+       <div style="margin-top: 5px;" class="form-check form-check-gender">
+        <label style="margin-left: 5px;" for="inputgender" class="form-label" required>Gender<span style="color:red">*</span></label>
+       
+            <input style="margin-left: 180px;" class="form-check-input" type="radio" name="inlineRadioOptions" id="malecheckbox" value="male" >
+            <label class="form-check-label" for="malecheckbox">Male</label>
+         
+         
+            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="femalecheckbox" value="female" required>
+            <label class="form-check-label" for="femalecheckbox">Female</label>
+         
+        </div>
+
+        <div style="margin-top: 5px;" class="form-check form-check-preferences">
+            <label style="margin-left: 5px;" for="inputpreferences" class="form-preferences" required>Preferences<span style="color:red">*</span></label>
+            
+                <input style="margin-left: 150px;" class="form-check-input" type="checkbox" id="inlineCheckboxred" value="red">
+                <label class="form-check-label" for="inlineCheckboxred">Red</label>
+            
+             
+                <input class="form-check-input" type="checkbox" id="inlineCheckboxgreen" value="green">
+                <label class="form-check-label" for="inlineCheckboxgreen">Green</label>
+             
+             
+                <input class="form-check-input" type="checkbox" id="inlineCheckboxblue" value="blue">
+                <label class="form-check-label" for="inlineCheckboxblue">Blue</label>
+             
+           </div>
+
+           <div style="margin-top: 5px;" class="col-md-6">
+            <label style="margin-left: 5px;" for="inputphonenumber" class="form-label">Phone<span style="color:red">*</span></label>
+            <input style="margin-left: 193px;" type="number" class="form-control" id="inputphonenumber" required>
+          </div>
+
+          <div style="margin-top: 5px;" class="mb-3">
+            <label style="margin-left: 5px;" for="inputemail" class="form-label">Email<span style="color:red">*</span></label>
+            <input style="margin-left: 195px;" type="email" class="form-control" id="inputemail" required>
+          </div>
+       
+       
+          <div style="margin-top: 5px;" class="col-12">
+            <div class="col-md-6">
+                <label style="margin-left: 5px;" for="inputPassword4" class="form-label">Password(6-8 characters)<span style="color:red">*</span></label>
+                <input style="margin-left: 40px;" type="password" class="form-control" id="inputPassword1" required>
+              </div>
+        </div>
+
+        <div style="margin-top: 5px;" class="col-md-6">
+            <label style="margin-left: 5px;" for="inputPassword4" class="form-label">Verify Password<span style="color:red">*</span></label>
+            <input style="margin-left: 110px;" type="password" class="form-control" id="inputPassword2" required>
+          </div>
+          <span id = "message" style="color:red"> </span> <br><br>  
+
+        <div style="margin-top: 5px;" class="col-12">
+          <button style="margin-left: 262px; width: 70px; margin-top: -800px;" type="submit" class="btn btn-primary" value="submit">Send</button>
+          <button style="margin-left: 20px; width: 70px;" type="reset" class="btn btn-primary">clear</button>
+        </div>
+      </form>
+     
+    </div>
+    
+</body>
+</html>
